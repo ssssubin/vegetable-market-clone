@@ -1,0 +1,41 @@
+.msg-bar {
+  border-top: 2px solid var(--border-color);
+  background-color: #f2f3f7;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2pt;
+}
+.msg-bar img {
+  width: 20px;
+}
+.msg-bar input {
+  width: 73vw;
+  height: 13pt;
+  border-radius: 15pt;
+  padding: 7pt 8pt 7pt 8pt;
+  border: 2px solid var(--border-color);
+  position: relative;
+}
+#msg-bar__plus {
+  padding: 7pt 7pt 7pt 6pt;
+}
+#msg-bar__dm {
+  padding: 7pt 3pt 7pt 5pt;
+}
+#msg-bar__icon {
+  position: absolute;
+  right: 55px;
+}
+.msg-bar div {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  right: 53px;
+  top: 10px;
+  border-radius: 50%;
+  background-color: #ff7e34;
+}

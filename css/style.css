@@ -1,0 +1,25 @@
+@import "main.css";
+@import "header.css";
+@import "footer.css";
+@import "reset.css";
+
+:root {
+  --border-color: #f6f6f6;
+}
+
+.msg-reduce-monitor {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+@media screen and (max-width: 380px) {
+  .msg-reduce-monitor {
+    display: none;
+  }
+}
