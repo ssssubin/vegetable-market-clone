@@ -35,35 +35,27 @@
       </div>
     </header>
     <main>
-      <div class="chat1">
-        <div id="chat1__time">오후 3:45</div>
-        <div id="chat1__content">
-          오늘 시민공원 근처에서 7시에 가능하신가요?
-        </div>
-      </div>
-      <div class="chat2">
-        <img src="assets/아기.jpg" alt="baby" />
-        <div id="chat2__content">네 가능해요 그때 봐요!</div>
-        <div id="chat2__time">오후 3:45</div>
-      </div>
-      <div class="confirm">
-        <div class="confirm-day">
-          <img src="assets/calender.svg" alt="calender" />
-          <div>4월 28일 (수) 오후 7:00</div>
-        </div>
-        <div id="confirm-set">슬기맘님이 거래 약속을 설정했어요.</div>
-      </div>
-      <div id="alarm">약속 시간 30분 전에 슬기맘님에게 알림이 울릴 거예요.</div>
+      <ul id="chat-ul"></ul>
     </main>
     <footer>
-      <div class="msg-bar">
-        <img id="msg-bar__plus" src="assets/plus.svg" alt="plus" />
-        <input type="text" placeholder="메시지를 입력하세요." />
-        <img id="msg-bar__icon" src="assets/smile.svg" alt="smile" />
-        <div></div>
-        <img id="msg-bar__dm" src="assets/dm.svg" alt="dm" />
-      </div>
+      <form id="chat-form" action="">
+        <div class="msg-bar">
+          <img id="msg-bar__plus" src="assets/plus.svg" alt="plus" />
+          <input
+            type="text"
+            id="msg-bar__input"
+            placeholder="메시지를 입력하세요."
+            required
+          />
+          <img id="msg-bar__icon" src="assets/smile.svg" alt="smile" />
+          <div></div>
+          <button id="chat-submit" type="submit">
+            <img id="msg-bar__dm" src="assets/dm.svg" alt="dm" />
+          </button>
+        </div>
+      </form>
     </footer>
     <div class="msg-reduce-monitor">화면 크기를 줄여주세요.</div>
+    <script src="app.js"></script>
   </body>
 </html>
